@@ -1,0 +1,183 @@
+html,body{
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  margin:0;
+  padding:0;
+}
+
+#viewport{
+  height:100%;
+  width:100%;
+  background-color:black;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  -webkit-perspective-origin:50% 50%;
+  -moz-perspective-origin:50% 50%;
+  -o-perspective-origin:50% 50%;
+  -ms-perspective-origin:50% 50%;
+  perspective-origin:50% 50%;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-perspective:700px;
+  -moz-perspective:700px;
+  -o-perspective:700px;
+  -ms-perspective:700px;
+  perspective:700px;
+}
+
+.room{
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+}
+.room .wall{
+	position:absolute;
+	height:100%;
+  width:100%;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+}
+.room .wall:nth-child(1){
+  bottom:0;
+  background-color:rgb(255, 255, 255);
+  background-size:100% 100%;
+  -webkit-box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+  -moz-box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+  box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+  -webkit-transform-origin:50% 100%;
+  -moz-transform-origin:50% 100%;
+  -o-transform-origin:50% 100%;
+  -ms-transform-origin:50% 100%;
+  transform-origin:50% 100%;
+  -webkit-transform:rotateX(90deg);
+  -moz-transform:rotateX(90deg);
+  -o-transform:rotateX(90deg);
+  -ms-transform:rotateX(90deg);
+  transform:rotateX(90deg);
+}
+.room .wall:nth-child(2){
+  top:0;
+  background-color:rgb(255, 255, 255);
+  background-repeat:repeat;
+  background-size:10% auto;
+  -webkit-box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+  -moz-box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+  box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+  -webkit-transform-origin:50% 0;
+  -moz-transform-origin:50% 0;
+  -o-transform-origin:50% 0;
+  -ms-transform-origin:50% 0;
+  transform-origin:50% 0;
+  -webkit-transform:rotateX(-90deg);
+  -moz-transform:rotateX(-90deg);
+  -o-transform:rotateX(-90deg);
+  -ms-transform:rotateX(-90deg);
+  transform:rotateX(-90deg);
+}
+.room .wall:nth-child(3){
+  left:0;
+  background-color:rgb(255, 255, 255);
+  background-size:auto 30%;
+  background-repeat:repeat;
+  -webkit-box-shadow: inset 33px 1px 300px 8px rgba(0,0,0,0.66);
+  -moz-box-shadow: inset 33px 1px 300px 8px rgba(0,0,0,0.66);
+  box-shadow: inset 33px 1px 300px 8px rgba(0,0,0,0.66);
+  -webkit-transform-origin:0 50%;
+  -moz-transform-origin:0 50%;
+  -o-transform-origin:0 50%;
+  -ms-transform-origin:0 50%;
+  transform-origin:0 50%;
+  -webkit-transform:rotateY(90deg);
+  -moz-transform:rotateY(90deg);
+  -o-transform:rotateY(90deg);
+  -ms-transform:rotateY(90deg);
+  transform:rotateY(90deg);
+}
+.room .wall:nth-child(4){
+  right:0;
+  background-color:rgb(255, 255, 255);
+  background-size:auto 35%;
+  background-repeat:repeat;
+  -webkit-box-shadow: inset 33px 1px 300px 8px rgba(0,0,0,0.66);
+  -moz-box-shadow: inset 33px 1px 300px 8px rgba(0,0,0,0.66);
+  box-shadow: inset 33px 1px 300px 8px rgba(0,0,0,0.66);
+  -webkit-transform-origin:100% 50%;
+  -moz-transform-origin:100% 50%;
+  -o-transform-origin:100% 50%;
+  -ms-transform-origin:100% 50%;
+  transform-origin:100% 50%;
+  -webkit-transform:rotateY(-90deg);
+  -moz-transform:rotateY(-90deg);
+  -o-transform:rotateY(-90deg);
+  -ms-transform:rotateY(-90deg);
+  transform:rotateY(-90deg);
+}
+.room .wall:nth-child(5){
+  top:0;
+  background-color:rgb(255, 255, 255);
+  background-repeat:repeat;
+  background-size:100% auto;
+  -webkit-box-shadow: inset 0 0 999px 100px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0 0 999px 100px rgba(0,0,0,0.75);
+  box-shadow: inset 0 0 999px 100px rgba(0,0,0,0.75);
+  -webkit-transform-origin:50% 50%;
+  -moz-transform-origin:50% 50%;
+  -o-transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%;
+  transform-origin:50% 50%;
+}
+.room .wall:nth-child(6){
+  top:0;
+  background-color:transparent;
+  -webkit-transform-origin:50% 50%;
+  -moz-transform-origin:50% 50%;
+  -o-transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%;
+  transform-origin:50% 50%;
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  -o-transform:translateZ(0);
+  -ms-transform:translateZ(0);
+  transform:translateZ(0);
+}
+/*
+██████╗  ██████╗ ██╗   ██╗███████╗██╗  ██╗ █████╗ ███╗   ██╗     ██████╗ █████╗ ██████╗ ██████╗ ████████╗
+██╔═══██╗██╔════╝ ██║   ██║╚══███╔╝██║  ██║██╔══██╗████╗  ██║    ██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝
+██║   ██║██║  ███╗██║   ██║  ███╔╝ ███████║███████║██╔██╗ ██║    ██║     ███████║██████╔╝██████╔╝   ██║   
+██║   ██║██║   ██║██║   ██║ ███╔╝  ██╔══██║██╔══██║██║╚██╗██║    ██║     ██╔══██║██╔══██╗██╔══██╗   ██║   
+╚██████╔╝╚██████╔╝╚██████╔╝███████╗██║  ██║██║  ██║██║ ╚████║    ╚██████╗██║  ██║██║  ██║██║  ██║   ██║   
+╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝     ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
+                                                                    ██                                     
+██████╗ ███████╗███████╗██████╗  ██████╗ ██████╗ ██████╗ 
+██╔══██╗██╔════╝██╔════╝██╔══██╗██╔════╝██╔═══██╗██╔══██╗
+██║  ██║█████╗  █████╗  ██████╔╝██║     ██║   ██║██║  ██║ ----------------------------------------------
+██║  ██║██╔══╝  ██╔══╝  ██╔═══╝ ██║     ██║   ██║██║  ██║ 
+██████╔╝███████╗███████╗██║     ╚██████╗╚██████╔╝██████╔╝
+╚═════╝ ╚══════╝╚══════╝╚═╝      ╚═════╝ ╚═════╝ ╚═════╝ 
+
+██████╗ █████╗ ██████╗ ████████╗     █████╗ ██████╗ ██████╗ 
+██╔════╝██╔══██╗██╔══██╗╚══██╔══╝    ██╔══██╗██╔══██╗██╔══██╗
+██║     ███████║██████╔╝   ██║       ███████║██████╔╝██████╔╝
+██║     ██╔══██║██╔══██╗   ██║       ██╔══██║██╔═══╝ ██╔═══╝ 
+╚██████╗██║  ██║██║  ██║   ██║       ██║  ██║██║     ██║     
+╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚═╝  ╚═╝╚═╝     ╚═╝     
+*/
